@@ -1,0 +1,49 @@
+name: tools
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2 # Pastikan ini ada di sini, bukan di blok flutter:
+
+dependencies:
+  cloud_firestore: ^5.6.7
+  cupertino_icons: ^1.0.8
+  excel: ^4.0.6
+  file_picker: ^10.1.2
+  firebase_auth: ^5.5.3
+  firebase_core: ^3.13.0
+  fl_chart: ^1.0.0
+  flutter_dotenv: ^5.2.1
+  flutter_image_compress: ^2.4.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_riverpod: ^2.6.1
+  http: ^1.4.0
+  image_picker: ^1.1.2
+  intl: ^0.20.2
+  mailer: ^6.4.1
+  path_provider: ^2.1.1
+  pdf: ^3.10.4
+  permission_handler: ^11.2.0
+  printing: ^5.11.0
+  provider: ^6.1.5
+  share_plus: ^7.2.1
+  shimmer: ^3.0.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter # Hanya diperlukan untuk flutter_test
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  assets:
+    - .env
+  uses-material-design: true
